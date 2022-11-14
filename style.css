@@ -1,0 +1,265 @@
+@media screen and (max-width: 500px){
+    #info{
+        max-height: 900px;
+    }
+    #info h1{
+        font-size: 2.3rem !important;
+    }
+    #info p{
+        font-size: 1.9rem !important;
+    }
+    .nav-container{
+        justify-content: center !important;
+    }
+    #footer p+p{
+        margin-left: 0px !important;
+        margin-top: 20px !important;
+    }
+    .self_link__title h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.7;
+    }
+    .self_link__links{
+        margin-left: -20px;
+    }
+    .link{
+        font-size: 1.5rem !important;
+        line-height: 2.5;
+    }
+    .projects__title h1{
+        font-size: 1.6rem !important;
+    }
+    .projects__list{
+        padding: 0 32px !important;
+        grid-template-rows: 350px !important;
+    }
+    .project img{
+        object-fit: fill !important;
+        height: 290px !important;
+    }
+    a > p{
+        font-size: 1.2rem !important;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+#nav{
+    width: 100%;
+    height: 70px;
+    background-color: var(--main-red);
+    border-bottom: 2px solid var(--main-gray);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 24px;
+}
+
+.nav__link{
+    display: flex;
+    max-width: fit-content;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.nav__link a{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.nav__link:hover{
+    background-color: var(--main-blue);
+    border-bottom: 2px solid var(--main-gray);
+}
+
+#main{
+    margin-top: 70px;
+}
+
+#info{
+    background: linear-gradient(70deg, #3a3d40, #181719);
+    max-width: 100%;
+    height: 980px;                  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#info h1{
+    font-size: 3.2rem;
+}
+
+#info p{
+    font-size: 2.2rem;
+    color: var(--main-red);
+    font-style: italic;
+}
+
+#projects{
+    text-align: center;
+    height: 100%;
+    background-color: var(--main-blue);
+    padding-bottom: 100px;
+}
+
+.projects__title{
+    margin-bottom: 40px;
+    padding-top: 100px;
+}
+
+.projects__title h1{
+    max-width: 640px;
+    width: 100%;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #fff;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.projects__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    row-gap: 50px;
+    column-gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.project{
+    background: var(--main-gray);
+    box-shadow: 3px 3px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+.project img{
+    object-fit: fill;
+    width: 100%;
+    height: 380px;
+}
+
+a > p{
+    font-size: 1.3rem;
+    padding: 0.8rem 0.2rem;
+}
+p span{
+    color: var(--main-gray);
+    font-size: 1.3rem;
+    transition: color 0.3s ease-out;
+    padding: 0 8px;
+}
+
+.project:hover span{
+    color: darkorange;
+}
+
+#self_link{
+    background-color: var(--main-gray);
+}
+
+.self_link__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    padding: 340px 0px 300px 0px;
+}
+
+.self_link__title h1{
+    font-size: 3.2rem;
+}
+
+.self_link__title p{
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 80%;
+    line-height: 2;
+}
+
+.self_link__links{
+    padding-top: 40px;
+}
+
+.link{
+    font-size: 1.6rem;
+    display: inline-block;
+    text-shadow: 4px 3px black;
+    transition: transform 0.3s linear;
+}
+
+.self_link__links a+a{
+    margin-left: 30px;
+}
+
+.link:hover{
+    transform: translateY(12px);
+}
+
+footer{
+    background-color: var(--main-gray);
+    border-top: 2px solid var(--main-red);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 36px;
+}
+
+#footer p+p{
+    margin-left: 140px;
+}
+.footer__rights, .footer_commerc{
+    font-size: 1.1rem;
+}
+
+.footer_commerc::before{
+    content: '\00a9';
+}
+
+.fab, .fa-brands, .fas{
+    font-family: "Font Awesome";
+    color: #fff;
+    font-style: normal;
+    line-height: 1;
+    vertical-align: middle;
+    padding: 0 8px;
+}
